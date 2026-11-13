@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="5;url=privacy_en.html">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting...</title>
+  <script>
+    // Redirect based on browser language
+    const lang = navigator.language || navigator.userLanguage;
+    if (lang.startsWith("ko")) {
+      window.location.href = "privacy_ko.html";
+    } else if (lang.startsWith("ja")) {
+      window.location.href = "privacy_ja.html";
+    } else {
+      window.location.href = "privacy_en.html";
+    }
+  </script>
+</head>
+<body>
+  <p>Redirecting to your preferred language version...</p>
+  <p>If you are not redirected automatically, please check your browser's language settings.</p>
+</body>
+</html>
